@@ -78,30 +78,25 @@ footer button{min-height:46px}
 @media(max-width:760px){.stage .side{display:flex;flex:.5;height:50%}.stage{gap:5px}.stage button.arrow{width:40px;height:44px}.qr-action{padding:0 10px}}
 @media(max-height:520px){.modal{padding:52px 4vw 8px;gap:3vw}.qrpanel{gap:5px}.qrpanel a{padding:4px}}
 
-/* 보고서 상세보기 디자인 개선 */
-.modal {
-    background: #f2f3f3;
-}
-
+/* 상세보기: 표지 경계와 입체감 개선 */
+.modal { background: #f2f3f3; }
 .modal #large {
     width: auto;
     height: auto;
     max-width: 100%;
     max-height: 100%;
     background: #ffffff;
-    outline: 1px solid #dedede;
-    box-shadow: 0 12px 36px rgba(0,0,0,0.16);
+    border: 1px solid #dedede;
+    box-shadow: 0 12px 36px rgba(0,0,0,.16);
 }
-
 .modal .qrpanel {
     background: #ffffff;
-    padding: 24px;
+    padding: clamp(12px, 2vw, 24px);
     border-radius: 16px;
     justify-self: center;
+    width: min(100%, 420px);
     max-width: 100%;
-    box-sizing: border-box;
 }
-    
 </style>
 </head>
 <body>
